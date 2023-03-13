@@ -13,6 +13,8 @@ public class Shape {
 
     public static final String ARC = "Arc";
 
+    public static final String LINE = "Line";
+
     // private instance variables
     private Color color; // color to draw shape in
     private Point p1; // first point; a Point object has an x and y attribute, e.g. p1.x and p1.y
@@ -20,9 +22,17 @@ public class Shape {
 
     /** Constructor */
     public Shape() {
-        color = Color.black;
+        color = Color.BLUE;
         p1 = new Point();
         p2 = new Point();
+    }
+
+    public Point getP1(){
+        return p1;
+    }
+
+    public Point getP2(){
+        return p2;
     }
 
     public Color getColor() {
